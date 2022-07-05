@@ -1,12 +1,12 @@
-const categoriesEl = document.querySelector('ul');
+const categoriesEl = document.querySelectorAll('ul');
 
 
-const getNumCategories = (categories) => console.log(`Number of categories: ${categories.children.length}`);
+const getNumCategories = (categories) => console.log(`Number of categories: ${categories.length -1}`);
 
 getNumCategories(categoriesEl);
 
 
-const itemsEl = categoriesEl.querySelectorAll('.item');
+const itemsEl = document.querySelectorAll('.item');
 
 const getTitleAndNumItem = (items) => {
     return items.forEach(el => console.log(
